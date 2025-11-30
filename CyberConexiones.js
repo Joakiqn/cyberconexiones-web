@@ -10,8 +10,6 @@ async function fetchBcvRate() {
         }
         
         const data = await response.json();
-        
-        // 🚨 CAMBIO CLAVE: Extraemos el campo 'promedio' de la respuesta para el Dólar Oficial
         const currentRate = parseFloat(data.promedio); 
 
         if (isNaN(currentRate)) {
@@ -23,26 +21,18 @@ async function fetchBcvRate() {
         
     } catch (error) {
         console.error('Error al obtener la tasa BCV:', error);
-        // Tasa de respaldo fija si la API falla o no está disponible
-        return 36.50; 
+        return 36.50; // Valor por defecto en caso de error
     }
 }
 
-/**
- * Actualiza la tasa en el header y recalcula los precios de los productos.
- * @param {number} rate - Tasa de cambio actual (VES/USD).
- */
-
- 
 function updatePrices(rate) {
     document.querySelectorAll('[data-usd-price]').forEach(el => {
         const usdPrice = parseFloat(el.getAttribute('data-usd-price'));
         if (!isNaN(usdPrice)) {
             const vesPrice = usdPrice * rate;
+            const vesPriceRounded = Math.round(vesPrice);
             
-            // CAMBIO AQUÍ: Usamos Math.round para redondear al entero y toFixed(0)
-            const vesPriceRounded = Math.round(vesPrice); // Redondea (ej: 36.50 a 37, 36.49 a 36)
-            
+            // Estructura limpia para el precio
             el.innerHTML = `
                 <span class="price-bs">Bs <b>${vesPriceRounded.toFixed(0).replace('.', ',')}</b></span> 
                 <span class="price-usd">(${usdPrice.toFixed(2)} USD)</span>
@@ -55,12 +45,8 @@ function updatePrices(rate) {
         const usd = parseFloat(el.getAttribute('data-usd'));
         if (!isNaN(usd)) {
             const ves = usd * rate;
-            
-            // CAMBIO AQUÍ: Redondeamos 'ves' al entero más cercano
             const vesRounded = Math.round(ves);
             
-            // Formato: $0.05 (1.85 Bs) -> Queda limpio dentro del párrafo
-            // Usamos vesRounded.toFixed(0) para asegurar que no haya decimales
             el.innerHTML = `$${usd.toFixed(2)} (<span style="color:var(--main-color)">${vesRounded.toFixed(0).replace('.', ',')} Bs</span>)`;
         }
     });
@@ -70,52 +56,46 @@ function updatePrices(rate) {
             if (rate) {
                 rateDisplay.innerText = rate.toFixed(2).replace('.', ','); 
             } else {
-                rateDisplay.innerText = 'Error de conexión';
+                rateDisplay.innerText = 'Error';
             }
         }
 }
 
-
-  
-/**
- * Función principal para iniciar la actualización periódica.
- */
 async function startPriceUpdater() {
-    // Primera actualización al cargar
     const currentRate = await fetchBcvRate();
     updatePrices(currentRate);
 
-    // Actualizar periódicamente
     setInterval(async () => {
         const newRate = await fetchBcvRate();
         updatePrices(newRate);
     }, REFRESH_INTERVAL_MS);
 }
 
-// Iniciar el actualizador de precios al cargar la página
 startPriceUpdater();
 
-      // -- SECTION FONDO ---
-
-      const images = document.querySelectorAll('.slider-image'); 
+// -- SLIDER --
+const images = document.querySelectorAll('.slider-image'); 
 let currentImageIndex = 0;
 
 function changeBackground() {
-  images[currentImageIndex].classList.remove('active');
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  images[currentImageIndex].classList.add('active');
+  if (images.length > 0) {
+      images[currentImageIndex].classList.remove('active');
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      images[currentImageIndex].classList.add('active');
+  }
 }
 
 setInterval(changeBackground, 5000);
-      // ---
 
-      const observador = new IntersectionObserver((entradas) => {
-        entradas.forEach((entrada) => {
-          if (entrada.isIntersecting) {
-            entrada.target.classList.add('mostrar')
-          }
-        })
-      })
+// -- ANIMACIÓN SCROLL (Observador) --
+const observador = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('mostrar');
+      observador.unobserve(entrada.target); // Dejar de observar una vez animado (Rendimiento)
+    }
+  })
+});
 
-      const elementosOcultos =document.querySelectorAll('.oculto');
-      elementosOcultos.forEach((el) => observador.observe(el))
+const elementosOcultos = document.querySelectorAll('.oculto');
+elementosOcultos.forEach((el) => observador.observe(el));
