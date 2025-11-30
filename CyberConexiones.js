@@ -21,7 +21,7 @@ async function fetchBcvRate() {
         
     } catch (error) {
         console.error('Error al obtener la tasa BCV:', error);
-        return 36.50; // Valor por defecto en caso de error
+        return 36.50; 
     }
 }
 
@@ -32,7 +32,6 @@ function updatePrices(rate) {
             const vesPrice = usdPrice * rate;
             const vesPriceRounded = Math.round(vesPrice);
             
-            // Estructura limpia para el precio
             el.innerHTML = `
                 <span class="price-bs">Bs <b>${vesPriceRounded.toFixed(0).replace('.', ',')}</b></span> 
                 <span class="price-usd">(${usdPrice.toFixed(2)} USD)</span>
@@ -73,7 +72,7 @@ async function startPriceUpdater() {
 
 startPriceUpdater();
 
-// -- SLIDER --
+// -- SLIDER -- //
 const images = document.querySelectorAll('.slider-image'); 
 let currentImageIndex = 0;
 
@@ -87,12 +86,12 @@ function changeBackground() {
 
 setInterval(changeBackground, 5000);
 
-// -- ANIMACIÓN SCROLL (Observador) --
+// -- ANIMACIÓN SCROLL -- //
 const observador = new IntersectionObserver((entradas) => {
   entradas.forEach((entrada) => {
     if (entrada.isIntersecting) {
       entrada.target.classList.add('mostrar');
-      observador.unobserve(entrada.target); // Dejar de observar una vez animado (Rendimiento)
+      observador.unobserve(entrada.target);
     }
   })
 });

@@ -180,6 +180,7 @@ header{
   overflow: hidden;
   transition: background-image 1.5s ease-in-out;
   min-height: 80vh;
+  min-width: 100vw;
 }
 
 .slider-container {
@@ -610,7 +611,7 @@ header{
 }
 
 
-/* FOOTER */
+/* --FOOTER-- */
 
 footer{
   background-color: var(--main-color);
@@ -896,7 +897,7 @@ footer{
   }
 
   .products-grid {
-    grid-template-columns: 1fr; /* Una sola columna en móviles pequeños */
+    grid-template-columns: 1fr;
   }
 
   .wrapper-card{
@@ -913,7 +914,7 @@ footer{
   }
   
   .features-item:hover {
-    transform: translateY(-5px); /* Movimiento vertical en vez de horizontal */
+    transform: translateY(-5px); 
   }
 }
 
