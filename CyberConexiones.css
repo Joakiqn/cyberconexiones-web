@@ -245,7 +245,7 @@ header{
 }
 
 .boton-1{
-  padding: 14px 35px;
+  padding: 4px 12px;
   border-radius: 50px;
   border: none;
   background-color: #374c55;
@@ -273,7 +273,6 @@ header{
 
 .boton-1:hover{
   transition: 0.3s;
-  background-color: var(--accent-hover);
 }
 
 .boton-1:active{
