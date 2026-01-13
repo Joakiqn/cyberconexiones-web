@@ -4,305 +4,192 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Cyber Conexiones Mariño</title>
-    <link rel="stylesheet" href="CyberConexiones.css" />
+    <meta name="description" content="Centro de soluciones digitales en Cagua. Trámites, copias, impresiones y venta de accesorios tecnológicos.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Cyber Conexiones Mariño | Tu aliado tecnológico</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav class="nav-menu">
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </label>  
-            <div class="logo-container">
-              <div class="logo">
-                <img src="logo-cyber-3.png" alt="Logo de CyberConexiones">
-              </div>
-              <span>CyberConexiones</span>
-            </div>
-          <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#servicios">SERVICIOS</a></li>
-            <li><a href="#productos">PRODUCTOS</a></li>
-            <li><a href="#ubicacion">UBICACIÓN</a></li>
-          </ul>
-          <div class="exchange-container">
-            <div class="exchange-rate-display">
-              Dólar BCV: <span id="rate-value">Cargando...</span>VES
-            </div>
-          </div>  
-        </nav>
-      </div>  
-    </header>
-
-    <main>
-      <section class="section-1" id="inicio">
-        <div class="slider-container" id="background-slider">
-          <div class="slider-image active" style="background-image: url('imagen-1.jpg');"></div>
-          <div class="slider-image" style="background-image: url('imagen-3.jpg');"></div>
-          <div class="slider-image" style="background-image: url('imagen-4.jpg');"></div>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav-menu">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="logo-cyber-3.png" alt="Logo de CyberConexiones">
+          </div>
+          <span>CyberConexiones</span>
         </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>  
 
-        <div class="container">
-          <h1 class="title oculto">Todo lo que necesitas en un solo lugar</h1>
-          <p class="oculto retraso-1">Somos tu mejor centro de fotocopiado</p>
-          <button class="boton-1 oculto retraso-2"><a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-            class="boton-1 animar-entrada retraso-2" target="_blank">Contactar</a> <i class="fa-solid fa-arrow-right"></i></button>
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
+          <li><a href="productos.html">PRODUCTOS</a></li>
+          <li><a href="ubicacion.html">UBICACIÓN</a></li>
+        </ul>
+
+        <div class="exchange-container">
+          <div class="exchange-rate-display">
+            Dólar BCV: <span id="rate-value">Cargando...</span>VES
+          </div>
         </div>  
-      </section>
+      </nav>
+    </div>  
+  </header>
 
-      <section class="info-section">
-        <div class="container">
-          <div class="content-wrapper">
-            <aside class="img-column">
-              <img src="imagen-2.jpg" alt="Centro de copiado" class="oculto">
-          </aside>
-      
-      <div class="text-column">
-        <h2 class="oculto">¿A qué nos dedicamos?</h2>
-        <p class="oculto">Soluciones rápidas y de calidad para tus documentos.</p>
-        
-        <ul class="features-list">
-          <li class="features-item oculto retraso-1">
-            <div class="icon-wrapper"><i class="fa-solid fa-copy"></i></div>
-            <div class="feature-text">
-              <h3>Copias B/N y a color</h3>
-              <p>B/N desde <strong class="info-price" data-usd="0.08">...</strong> y color desde <strong class="info-price" data-usd="0.25">...</strong>.</p>
+  <main>
+    <section class="section-hero" id="inicio">
+      <div class="slider-container" id="background-slider">
+        <div class="slider-image active" style="background-image: url('imagen-1.jpg');"></div>
+        <div class="slider-image" style="background-image: url('imagen-3.jpg');"></div>
+        <div class="slider-image" style="background-image: url('imagen-4.jpg');"></div>
+      </div>
+
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title oculto retraso-1">Soluciones Digitales <br>y Tecnología al Alcance</h1>
+        <p class="hero-desc oculto retraso-2">Gestionamos tus trámites legales, imprimimos tus ideas y equipamos tu vida con lo mejor en tecnología en Cagua.</p>
+        <div class="hero-buttons oculto retraso-3">
+          <a href="servicios.html" class="btn-primary">Ver Servicios</a>
+          <a href="https://wa.me/584120347922?text=Hola,%20deseo%20información" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            Contactar <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>  
+    </section>
+
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nuestros Servicios</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-file-invoice"></i>
             </div>
-          </li>
+            <h3>Trámites Digitales</h3>
+            <p>Gestión de RIF, SAIME, Antecedentes Penales, Apostillas y más. Deja la burocracia en nuestras manos.</p>
+            <a href="servicios.html" class="btn-service">
+              Ver más <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
 
-          <li class="features-item oculto retraso-2">
-            <div class="icon-wrapper"><i class="fa-solid fa-print"></i></div>
-            <div class="feature-text">
-              <h3>Impresiones</h3>
-              <p>Láser y tinta continua. Documentos desde <strong class="info-price" data-usd="0.16">...</strong> y color desde <strong class="info-price" data-usd="0.25">...</strong>.</p>
+          <div class="service-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-print"></i>
             </div>
-          </li>
+            <h3>Impresiones y Copias</h3>
+            <p>Alta calidad en blanco y negro o color. Papelería, plastificación y escaneo de documentos al instante.</p>
+            <a href="servicios.html" class="btn-service">
+              Ver más <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
 
-          <li class="features-item oculto retraso-3">
-            <div class="icon-wrapper"><i class="fa-solid fa-file-arrow-down"></i></div>
-            <div class="feature-text">
-              <h3>Digitalización</h3>
-              <p>Escaneo a PDF o imagen desde <strong class="info-price" data-usd="0.50">...</strong> por lote.</p>
-            </div>  
-          </li>
-
-          <li class="features-item oculto retraso-4">
-            <div class="icon-wrapper"><i class="fa-solid fa-id-card"></i></div>
-            <div class="feature-text">
-              <h3>Plastificación</h3>
-              <p>Tamaño Carnet y Carta <strong class="info-price" data-usd="1.00">...</strong> .</p>
+          <div class="service-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-desktop"></i>
             </div>
-          </li>
+            <h3>Cyber</h3>
+            <p>Acceso a internet de alta velocidad, alquiler de computadoras, transcripciones y asistencia en navegación web segura.</p>
+            <a href="servicios.html" class="btn-service">
+              Ver más <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
 
-          <li class="features-item oculto retraso-4">
-            <div class="icon-wrapper"><i class="fa-solid fa-globe"></i></div>
-            <div class="feature-text">
-              <h3>Registro Online</h3>
-              <p>Citas SAIME, RIF y trámites. Asesoría desde <strong class="info-price" data-usd="2.00">...</strong>.</p>
-            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-preview section-padding">
+      <div class="container">
+        <div class="row-flex">
+          <div class="text-content oculto">
+            <h3 class="subtitle">Productos</h3>
+            <p>Desde auriculares de alta gama hasta accesorios para tu vehículo y celular. Tenemos lo que buscas al mejor precio.</p>
+            <a href="productos.html" class="btn-primary">Ver Catálogo Completo</a>
+          </div>
+          <div class="image-content oculto retraso-1">
+             <div class="product-showcase">
+                <img src="producto-1.webp" alt="Auriculares Gamer">
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+       <div class="cta-content container oculto">
+          <h2>¿Necesitas asesoría personalizada?</h2>
+          <p>Escríbenos y resolveremos tus dudas al instante.</p>
+          <a href="https://wa.me/584120347922?text=Hola,%20deseo%20información" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chatear Ahora
+          </a>
+       </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content"> 
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="logo-cyber-3.png" alt="CyberConexiones Logo">
+          <h3>CyberConexiones</h3>
+        </div>
+        <p class="footer-desc">
+          Soluciones integrales en trámites digitales, copiado e impresión. Tu aliado tecnológico en Cagua.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/584120347922?text=Hola,%20deseo%20información" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="inicio.html"><i class="fa-solid fa-angle-right"></i> Inicio</a></li>
+          <li><a href="servicios.html"><i class="fa-solid fa-angle-right"></i> Servicios</a></li>
+          <li><a href="productos.html"><i class="fa-solid fa-angle-right"></i> Productos</a></li>
+          <li><a href="ubicacion.html"><i class="fa-solid fa-angle-right"></i> Ubicación</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4>Contáctanos</h4>
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Cagua 2122, Aragua, Venezuela. <br> Calle Mariño c/ Av. Bolívar.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="https://wa.me/584120347922?text=Hola,%20deseo%20información" target="_blank" rel="noopener noreferrer">(+58) 412-034 7922</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:cyberconexiones1@gmail.com">cyberconexiones1@gmail.com</a>
           </li>
         </ul>
-      </div>  
-    </div>  
-  </div>  
-</section>
-        
-        <section class="section-3" id="servicios">
-          <div class="container">
-            <h2 class="title oculto">Servicios</h2>
-            <div class="service-list-container oculto retraso-1">
-              <h3 class="subtitle">Trámites y Gestiones en Línea y Más</h3>
-              <ul class="tramites-list">
-                  <li class="oculto retraso-2"><i class="fa-solid fa-file-signature"></i> Citas electrónicas</li>
-                  <li class="oculto retraso-3"><i class="fa-solid fa-id-card"></i> Citas de cédula</li>
-                  <li class="oculto retraso-4"><i class="fa-solid fa-stamp"></i> Cita de apostilla</li>
-                  <li class="oculto retraso-5"><i class="fa-solid fa-fingerprint"></i> Antecedentes penales</li>
-                  <li class="oculto retraso-6"><i class="fa-solid fa-house-chimney-medical"></i> Registro del FAOV</li>
-                  <li class="oculto retraso-7"><i class="fa-solid fa-address-card"></i> Síntesis curricular</li>
-                  <li class="oculto retraso-8"><i class="fa-solid fa-desktop"></i> Alquiler de computadoras</li>
-                  <li class="oculto retraso-9"><i class="fa-solid fa-video"></i> Registro online en Zoom</li>
-                  <li class="oculto retraso-10"><i class="fa-solid fa-gavel"></i> Trámites SAREN</li>
-                  <li class="oculto retraso-11"><i class="fa-solid fa-person-military-pointing"></i> Trámites SAIME</li>
-                  <li class="oculto retraso-12"><i class="fa-solid fa-road"></i> Trámites INTT</li>
-                  <li class="oculto retraso-13"><i class="fa-solid fa-dollar-sign"></i> Trámites SENIAT</li>
-              </ul>
-            </div> 
-          </div>  
-        </section>
-
-       <section class="products-section" id="productos">
-        <div class="container">
-        <h2 class="section-title oculto">Nuestros Productos Estrellas</h2>
-        <div class="products-grid">
-            
-            <div class="product-card oculto retraso-1">
-                <img src="producto-1.webp" alt="Teclado Mecánico RGB">
-                <div class="product-info">
-                    <h3>Auriculares Inalambricos M39 TWS</h3>
-                    <span class="price" data-usd-price="12">12 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-
-            <div class="product-card oculto retraso-1">
-                <img src="producto-5.webp" alt="Teclado Mecánico RGB">
-                <div class="product-info">
-                    <h3>Auricular Bluetooth de Casco para Moto</h3>
-                    <span class="price" data-usd-price="35">35 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-
-            <div class="product-card oculto retraso-1">
-                <img src="producto-6.jpg" alt="Teclado Mecánico RGB">
-                <div class="product-info">
-                    <h3>Soporte para Carro XO C76</h3>
-                    <span class="price" data-usd-price="12">12 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-            
-            <div class="product-card oculto retraso-2">
-                <img src="producto-2.webp">
-                <div class="product-info">
-                    <h3>Auriculares Inalambricos YD02 TWS</h3>
-                    <span class="price" data-usd-price="15">15 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-            
-            <div class="product-card oculto retraso-3">
-                <img src="producto-3.webp" alt="Webcam Full HD 1080p">
-                <div class="product-info">
-                    <h3>Gacho Cargador USB para Moto</h3>
-                    <span class="price" data-usd-price="8">8 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-
-            <div class="product-card oculto retraso-1">
-                <img src="producto-7.jpg" alt="Teclado Mecánico RGB">
-                <div class="product-info">
-                    <h3>Vimstrom Porta Celular para Moto</h3>
-                    <span class="price" data-usd-price="12">12 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-
-            <div class="product-card oculto retraso-1">
-                <img src="producto-8.webp" alt="Teclado Mecánico RGB">
-                <div class="product-info">
-                    <h3>Power Bank Solar</h3>
-                    <span class="price" data-usd-price="25">25 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-            
-            <div class="product-card oculto retraso-4">
-                <img src="producto-4.webp" alt="Audífonos Bluetooth con Micrófono">
-                <div class="product-info">
-                    <h3>Cargador Inteligente V-MEN</h3>
-                    <span class="price" data-usd-price="12">12 USD</span>
-                    <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                      class="btn-detail" target="_blank" class="btn-detail">Contactar</a>
-                </div>
-            </div>
-          </div>
-    </div>
-</section>
-
-        <section class="location-section" id="ubicacion">
-    <div class="container">
-        <h2 class="section-title oculto">Nuestra Ubicación</h2>
-        
-        <div class="location-content" id="contacto">
-          <div class="map-column oculto retraso-1">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.43267649012984!2d-67.46305381304944!3d10.186922902005962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e803b583f63ead3%3A0xebcc9b7d287a71f1!2sCyber%20Conexiones%20Mari%C3%B1o%20C.A!5e0!3m2!1sen!2sve!4v1764275090801!5m2!1sen!2sve"
-              width="100%" 
-              height="450" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-            
-            <div class="info-column oculto retraso-2">
-                <h3>Detalles y Horario</h3>
-                <p>Siempre estamos listos para atenderte con la mejor calidad en servicios e impresión.</p>
-                
-                <h4>Información de Contacto:</h4>
-                <ul class="contact-details">
-                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Calle Mariño, con Av. Bolívar, Cagua 2122, Aragua</li>
-                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> (+58) 412-0347922</li>
-                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> cyberconexiones1@gmail.com</li>
-                </ul>
-                
-                <h4>Horarios de Atención:</h4>
-                <ul class="hours-list">
-                    <li>Lunes a Sábado: 7:30 AM - 6:30 PM</li>
-                    <li>Domingos: 9:00 AM - 1:00 PM</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-        </section>
-
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="footer-left oculto">
-            <h3>CyberConexiones Mariño C.A</h3>
-            <p>&copy; 2025 CyberConexiones</p>
-          </div>
-          <div class="footer-right">
-            <div class="contact-item oculto retraso-1">
-              <div class="icon-circle">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="contact-text">
-                <a href="https://www.google.com/maps/dir//Cyber+Conexiones+Mari%C3%B1o+C.A+Calle+Mari%C3%B1o+con+Av.+Bol%C3%ADvar+Cagua+2122,+Aragua/@10.1870134,-67.4630896,20z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8e803b583f63ead3:0xebcc9b7d287a71f1!2m2!1d-67.463089!2d10.1870133?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" 
-                  target="_blank">Cagua 2122, Aragua, Venezuela</a>
-              </div>
-            </div>
-            <div class="contact-item oculto retraso-2">
-              <div class="icon-circle">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <div class="contact-text">
-                <a href="https://wa.me/584120347922?text=Hola%20CyberConexiones,%20vi%20su%20página%20web%20y%20quiero%20más%20información." 
-                  target="_blank">(+58) 412-0347922</a>
-              </div>
-            </div>
-            <div class="contact-item oculto retraso-3">
-              <div class="icon-circle">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-              <div class="contact-text">
-                <a href="mailto:cyberconexiones1@gmail.com">cyberconexiones1@gmail.com</a>
-              </div>
-            </div>
-          </div>  
-        </div>  
       </div>
-    </footer>
 
-    <script src="CyberConexiones.js"></script>
-  </body>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 <strong>CyberConexiones Mariño C.A.</strong> - Todos los derechos reservados.</p>
+    </div>
+  </div>
+  </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>

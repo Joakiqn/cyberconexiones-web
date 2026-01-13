@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Servicios - Cyber Conexiones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="servicios.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav-menu"> 
+        <div class="logo-container">
+          <div class="logo"><img src="logo-cyber-3.png" alt="Logo"></div>
+            <span>CyberConexiones</span>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>  
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
+          <li><a href="productos.html">PRODUCTOS</a></li>
+          <li><a href="ubicacion.html">UBICACIÓN</a></li>
+        </ul>
+        <div class="exchange-container">
+          <div class="exchange-rate-display">
+            Dólar BCV: <span id="rate-value">Cargando...</span>VES
+          </div>
+        </div>   
+      </nav>
+    </div>  
+  </header>
+
+  <main>
+    <section class="info-section">
+      <div class="info-content">
+        <h1>Nuestros Servicios</h1>
+        <p>Ofrecemos soluciones integrales para tus trámites y gestiones digitales con la mayor rapidez y seguridad.</p>
+        <a href="https://wa.me/584120347922?text=Hola,%20deseo%20información" target="_blank" rel="noopener noreferrer" class="boton">
+          Contactar <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div> 
+    </section>
+
+    <section class="services-list" id="catalogo-servicios">
+      <div class="container">
+        <h2 class="title oculto">Catálogo de Trámites</h2>
+        <div class="service-list-container oculto retraso-1">
+          <h3 class="subtitle">Gestiones en Línea y Asesoría</h3>
+
+          <div class="services-grid">
+            <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-calendar-check"></i></div>
+                <h4>Citas Electrónicas</h4>
+              </div>
+              <p class="short-desc">Gestión rápida para citas gubernamentales y privadas.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Solicitud y monitoreo de citas para diversos entes (Bancos, GTU, etc.). Conseguimos la fecha más pronta y te entregamos el comprobante.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
+                <h4>Citas de Cédula</h4>
+              </div>
+              <p class="short-desc">Agendamiento de cita para cedulación en el SAIME.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Recuperación de usuario y gestión de la cita para sacar la cédula (por renovación o primera vez) en la oficina más cercana.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-file-signature"></i></div>
+                <h4>Citas de Apostilla</h4>
+              </div>
+              <p class="short-desc">Legalización internacional de documentos.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Gestionamos tu cita para el Ministerio de Relaciones Exteriores y te asesoramos sobre el orden correcto de los documentos.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-fingerprint"></i></div>
+                <h4>Antecedentes Penales</h4>
+              </div>
+              <p class="short-desc">Certificado internacional de antecedentes.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Tramitamos y entregamos tu certificado de antecedentes penales en formato PDF, listo para trámites de extranjería.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-gavel"></i></div>
+                <h4>Trámites SAREN</h4>
+              </div>
+              <p class="short-desc">Planillas y citas para registros y notarías.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Gestión de la Planilla Única Bancaria (PUB) y citas para legalizaciones, registros de títulos, ventas y permisos de viaje.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <h4>Trámites SENIAT / RIF</h4>
+              </div>
+              <p class="short-desc">Inscripción y actualización del RIF.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Sacar RIF por primera vez, actualización de datos fiscales, recuperación de claves y declaración de ISLR.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-desktop"></i></div>
+                <h4>Alquiler de Computadoras</h4>
+              </div>
+              <p class="short-desc">Navegación rápida y equipos modernos.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Servicio de ciber café: Alquila equipos por hora para investigar, trabajar o realizar trámites personales con internet de alta velocidad.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-house-user"></i></div>
+                <h4>Registro en el FAOV</h4>
+              </div>
+              <p class="short-desc">Banavih y Ahorro Habitacional.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Afiliación de empresas y ahorristas voluntarios, generación de planillas de pago y gestión de solvencias.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-passport"></i></div>
+                <h4>Trámites SAIME</h4>
+              </div>
+              <p class="short-desc">Pasaportes, prórrogas y correcciones.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Asesoría y gestión para citas de pasaporte, solicitud de prórrogas y trámites de filiación o corrección de datos en el sistema.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-car"></i></div>
+                <h4>Trámites INTT</h4>
+              </div>
+              <p class="short-desc">Licencias de conducir y registro vehicular.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Renovación de licencias (todos los grados), traspasos y gestión de multas vehiculares.</p>
+            </div>
+          </div>
+
+          <div class="service-wrapper">
+            <div class="visible-card color-circle">
+              <div class="card-header">
+                <div class="icon-box"><i class="fa-solid fa-keyboard"></i></div>
+                <h4>Transcripciones</h4>
+              </div>
+              <p class="short-desc">Redacción y digitación de documentos.</p>
+              <button class="read-more-btn">Leer Más</button>
+            </div>
+            <div class="hidden-details expand-panel">
+              <p>Pasamos a digital todo tipo de textos: trabajos universitarios, tesis, cartas, oficios y documentos legales con excelente ortografía.</p>
+            </div>
+          </div>
+        </div> 
+      </div>  
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content"> 
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="logo-cyber-3.png" alt="CyberConexiones Logo">
+          <h3>CyberConexiones</h3>
+        </div>
+        <p class="footer-desc">
+          Soluciones integrales en trámites digitales, copiado e impresión. Tu aliado tecnológico en Cagua.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/584120347922?text=Hola,%20deseo%20información" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Inicio</a></li>
+          <li><a href="servicios.html"><i class="fa-solid fa-angle-right"></i> Servicios</a></li>
+          <li><a href="productos.html"><i class="fa-solid fa-angle-right"></i> Productos</a></li>
+          <li><a href="ubicacion.html"><i class="fa-solid fa-angle-right"></i> Ubicación</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4>Contáctanos</h4>
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Cagua 2122, Aragua, Venezuela. <br> Calle Mariño c/ Av. Bolívar.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="https://wa.me/584120347922?text=Hola,%20deseo%20información" target="_blank" rel="noopener noreferrer">(+58) 412-034 7922</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:cyberconexiones1@gmail.com">cyberconexiones1@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <strong>CyberConexiones Mariño C.A.</strong> - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+    
+  <script src="main.js"></script> 
+</body>
+</html>

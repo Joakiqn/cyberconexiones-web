@@ -1,0 +1,198 @@
+.location-section {
+  padding: 80px 0;
+  background-color: #D6FAFF;
+  overflow: hidden; 
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.location-section .section-title {
+  font-size: 2.8rem;
+  color: var(--second-color);
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr; 
+  background-color: var(--white);
+  border-radius: 24px;
+  overflow: hidden; 
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); 
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.info-column {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  z-index: 2;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 35px;
+  transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateX(10px);
+}
+
+
+.icon-box {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(0, 140, 158, 0.08); 
+  color: var(--accent-color);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-right: 20px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover .icon-box {
+  background-color: var(--accent-color);
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(0, 140, 158, 0.2);
+}
+
+.info-text h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: var(--second-color);
+  font-weight: 800;
+}
+
+.info-text p, .info-text a {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+}
+
+.info-text a:hover {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.hours-box {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 16px;
+  margin: 10px 0 35px;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+.hours-box::before {
+  content: 'HORARIO DE ATENCIÓN';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #d1d5db;
+  font-size: 0.95rem;
+  color: var(--second-color);
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-row span:last-child {
+  font-weight: 600;
+}
+
+.btn-location {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 16px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid var(--accent-color);
+  text-decoration: none;
+}
+
+.btn-location:hover {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+  transform: translateY(-4px);
+}
+
+.btn-location i {
+  transition: transform 0.3s;
+}
+
+.btn-location:hover i {
+  transform: translateX(3px) rotate(-45deg);
+}
+
+.map-column {
+  position: relative;
+  min-height: 100%;
+  background-color: #eee;
+}
+
+.map-column iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  filter: saturate(0.8); 
+  transition: filter 0.5s ease;
+}
+
+.map-column:hover iframe {
+  filter: saturate(1.2);
+}
+
+/* --- MEDIA --- */
+@media (max-width: 992px) {
+  .location-content {
+    grid-template-columns: 1fr; 
+  }
+  
+  .map-column {
+    height: 400px;
+    order: -1;
+  }
+  
+  .info-column {
+    padding: 40px 25px;
+  }
+}
